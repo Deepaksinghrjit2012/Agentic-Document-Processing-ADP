@@ -1,0 +1,15 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AZURE_OPENAI_RESPONSES_ENDPOINT": "https://YOUR-RESOURCE.services.ai.azure.com/openai/v1/responses",
+    "AZURE_OPENAI_DEPLOYMENT": "gpt-5-mini-1",
+    "AZURE_OPENAI_API_KEY": "",
+    "JEV_API_KEY": "",
+    "JEV_ENDPOINT": "https://api.typesafe.ai/v1/systemone",
+    "JEV_MODEL": "jev-latest",
+    "ADP_REQUEST_TIMEOUT": "210",
+    "FUNCTIONS_WORKER_PROCESS_COUNT": "1"
+  }
+}

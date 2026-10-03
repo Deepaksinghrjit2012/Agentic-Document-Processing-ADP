@@ -1,0 +1,13 @@
+{
+  "version": "2.0",
+  "functionTimeout": "00:03:40",
+  "extensions": {
+    "http": {"routePrefix": "", "maxConcurrentRequests": 1, "maxOutstandingRequests": 1}
+  },
+  "logging": {
+    "logLevel": {"default": "Information"},
+    "applicationInsights": {
+      "samplingSettings": {"isEnabled": true, "excludedTypes": "Request"}
+    }
+  }
+}

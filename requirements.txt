@@ -1,0 +1,10 @@
+# Hosted pipeline only: no local model weights, Torch or Transformers.
+azure-functions==1.25.0
+fastapi==0.142.2
+httpx==0.28.1
+jsonschema==4.26.0
+langgraph==1.2.12
+pillow==12.3.0
+pymupdf==1.28.2
+python-multipart==0.0.32
+uvicorn==0.54.0

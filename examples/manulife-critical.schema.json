@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "contract_number": {
+      "type": ["string", "null"],
+      "description": "Page 1, section 1: Plan contract number. Preserve leading zeros. Exclude spouse and HCSA contract numbers. Return null if unreadable."
+    },
+    "member_certificate_number": {
+      "type": ["string", "null"],
+      "description": "Page 1, section 1: Plan member certificate number. Preserve all letters and digits. Exclude the spouse certificate number. Return null if unreadable."
+    },
+    "plan_member_name": {
+      "type": ["string", "null"],
+      "description": "Page 1, section 1: Plan member name, including any middle initial. Do not substitute the patient or spouse name. Return null if unreadable."
+    },
+    "member_date_of_birth": {
+      "type": ["string", "null"],
+      "description": "Page 1, section 1: Plan member date of birth. Format DD/Mon/YYYY only when unambiguous. Exclude spouse date of birth and date signed. Return null if unreadable."
+    },
+    "phone_number": {
+      "type": ["string", "null"],
+      "description": "Page 1, section 1: Daytime phone number. Preserve all digits and any extension. Return null if unreadable."
+    },
+    "total_claim_amount": {
+      "type": ["string", "null"],
+      "description": "Page 2, section 11: Total amount of all receipts submitted. Return the numeric amount with two decimal places and no currency symbol or code. Do not calculate from unrelated numbers. Return null if unreadable."
+    }
+  },
+  "required": ["contract_number", "member_certificate_number", "plan_member_name", "member_date_of_birth", "phone_number", "total_claim_amount"],
+  "additionalProperties": false
+}
